@@ -15,14 +15,18 @@
     NSTimeInterval lastMoved; // Mouse
     NSTextField* statusLabel;
     
-    NSDictionary* params; // for keeping the parameters between threads and timers
     NSThread* clickThread;
+
+    CGMouseButton clickButton;
+    NSTimeInterval clickInterval; // seconds
+    double clickJitter; // fraction of clickInterval, e.g. 0.2 = ±20%
+    NSTimeInterval nextClickTime; // reference-date seconds, used when jittering
 }
 
 @property (assign) BOOL isClicking;
 
 - (void)stopClicking;
-- (void)startClicking:(int)button rate:(NSInteger)rate
+- (void)startClicking:(int)button rate:(NSTimeInterval)rate jitter:(double)jitter
                 startAfter:(NSInteger)start stopAfter:(NSInteger)stop
               ifStationaryFor:(NSInteger)stationary;
 

@@ -177,21 +177,21 @@
         </menu>
         <window title="Autoclick" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" releasedWhenClosed="NO" frameAutosaveName="MainWindow" animationBehavior="default" id="371">
             <windowStyleMask key="styleMask" titled="YES" closable="YES" miniaturizable="YES"/>
-            <rect key="contentRect" x="335" y="390" width="330" height="392"/>
+            <rect key="contentRect" x="335" y="390" width="330" height="418"/>
             <rect key="screenRect" x="0.0" y="0.0" width="3008" height="1667"/>
             <view key="contentView" id="372">
-                <rect key="frame" x="0.0" y="0.0" width="330" height="392"/>
+                <rect key="frame" x="0.0" y="0.0" width="330" height="418"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <box autoresizesSubviews="NO" fixedFrame="YES" boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="541" userLabel="Alternate Background">
-                        <rect key="frame" x="0.0" y="105" width="330" height="197"/>
+                        <rect key="frame" x="0.0" y="105" width="330" height="223"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView" id="hE6-Gw-LeF">
-                            <rect key="frame" x="0.0" y="0.0" width="330" height="197"/>
+                            <rect key="frame" x="0.0" y="0.0" width="330" height="223"/>
                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             <subviews>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="592" userLabel="Number Field - Start clicking after" customClass="MBNumberField">
-                                    <rect key="frame" x="160" y="157" width="35" height="22"/>
+                                    <rect key="frame" x="160" y="183" width="35" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="1" drawsBackground="YES" id="593">
                                         <font key="font" metaFont="system"/>
@@ -203,7 +203,7 @@
                                     </connections>
                                 </textField>
                                 <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="601" userLabel="Stepper - Start clicking after">
-                                    <rect key="frame" x="195" y="153" width="19" height="29"/>
+                                    <rect key="frame" x="195" y="179" width="19" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="60" doubleValue="1" id="602"/>
                                     <connections>
@@ -211,7 +211,7 @@
                                     </connections>
                                 </stepper>
                                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="606" userLabel="Pop Up Button - Start clicking after">
-                                    <rect key="frame" x="216" y="155" width="91" height="26"/>
+                                    <rect key="frame" x="216" y="181" width="91" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <popUpButtonCell key="cell" type="push" title="seconds" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="609" id="607">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -225,7 +225,7 @@
                                     </popUpButtonCell>
                                 </popUpButton>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="625" userLabel="Number Field - Stop clicking after" customClass="MBNumberField">
-                                    <rect key="frame" x="160" y="125" width="35" height="22"/>
+                                    <rect key="frame" x="160" y="151" width="35" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="1" drawsBackground="YES" id="633">
                                         <font key="font" metaFont="system"/>
@@ -237,7 +237,7 @@
                                     </connections>
                                 </textField>
                                 <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="626" userLabel="Stepper - Stop clicking after">
-                                    <rect key="frame" x="195" y="121" width="19" height="29"/>
+                                    <rect key="frame" x="195" y="147" width="19" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="60" doubleValue="1" id="632"/>
                                     <connections>
@@ -245,7 +245,7 @@
                                     </connections>
                                 </stepper>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="642" customClass="MBNumberField">
-                                    <rect key="frame" x="84" y="60" width="41" height="22"/>
+                                    <rect key="frame" x="84" y="86" width="41" height="22"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" enabled="NO" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="1" drawsBackground="YES" id="645">
                                         <font key="font" metaFont="system"/>
@@ -257,7 +257,7 @@
                                     </connections>
                                 </textField>
                                 <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="643">
-                                    <rect key="frame" x="125" y="56" width="19" height="29"/>
+                                    <rect key="frame" x="125" y="82" width="19" height="29"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <stepperCell key="cell" continuous="YES" enabled="NO" alignment="left" minValue="1" maxValue="3600" doubleValue="1" id="644"/>
                                     <connections>
@@ -265,7 +265,7 @@
                                     </connections>
                                 </stepper>
                                 <popUpButton verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="627" userLabel="Pop Up Button - Stop clicking after">
-                                    <rect key="frame" x="216" y="122" width="91" height="26"/>
+                                    <rect key="frame" x="216" y="148" width="91" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <popUpButtonCell key="cell" type="push" title="seconds" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="borderAndBezel" imageScaling="proportionallyDown" inset="2" selectedItem="631" id="628">
                                         <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -288,7 +288,7 @@
                                     </textFieldCell>
                                 </textField>
                                 <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="640">
-                                    <rect key="frame" x="18" y="85" width="224" height="18"/>
+                                    <rect key="frame" x="18" y="111" width="224" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="check" title="Click only if mouse is stationary" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="641">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -299,7 +299,7 @@
                                     </connections>
                                 </button>
                                 <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="650">
-                                    <rect key="frame" x="38" y="62" width="40" height="18"/>
+                                    <rect key="frame" x="38" y="88" width="40" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="check" title="for" bezelStyle="regularSquare" imagePosition="leading" alignment="left" enabled="NO" inset="2" id="651">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -307,7 +307,7 @@
                                     </buttonCell>
                                 </button>
                                 <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="687">
-                                    <rect key="frame" x="18" y="127" width="136" height="18"/>
+                                    <rect key="frame" x="18" y="153" width="136" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="check" title="Stop clicking after" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="688">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -315,7 +315,7 @@
                                     </buttonCell>
                                 </button>
                                 <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="689">
-                                    <rect key="frame" x="18" y="159" width="138" height="18"/>
+                                    <rect key="frame" x="18" y="185" width="138" height="18"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <buttonCell key="cell" type="check" title="Start clicking after" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="690">
                                         <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
@@ -323,7 +323,7 @@
                                     </buttonCell>
                                 </button>
                                 <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="698">
-                                    <rect key="frame" x="146" y="64" width="118" height="17"/>
+                                    <rect key="frame" x="146" y="90" width="118" height="17"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                                     <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="seconds or longer" id="699">
                                         <font key="font" metaFont="system"/>
@@ -331,6 +331,14 @@
                                         <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
                                     </textFieldCell>
                                 </textField>
+                                <button fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jit-Cb-x01">
+                                    <rect key="frame" x="18" y="53" width="260" height="18"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <buttonCell key="cell" type="check" title="Randomize click timing (±20%)" bezelStyle="regularSquare" imagePosition="leading" alignment="left" inset="2" id="jit-Cl-x02">
+                                        <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                                        <font key="font" metaFont="system"/>
+                                    </buttonCell>
+                                </button>
                                 <customView fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="691" customClass="SRRecorderControl">
                                     <rect key="frame" x="142" y="15" width="158" height="26"/>
                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
@@ -341,7 +349,7 @@
                         <color key="fillColor" name="underPageBackgroundColor" catalog="System" colorSpace="catalog"/>
                     </box>
                     <box autoresizesSubviews="NO" fixedFrame="YES" boxType="custom" borderType="none" borderWidth="0.0" title="Box" titlePosition="noTitle" translatesAutoresizingMaskIntoConstraints="NO" id="542" userLabel="Top Border">
-                        <rect key="frame" x="0.0" y="302" width="330" height="1"/>
+                        <rect key="frame" x="0.0" y="328" width="330" height="1"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <view key="contentView" id="hCB-XC-lye">
                             <rect key="frame" x="0.0" y="0.0" width="330" height="1"/>
@@ -361,7 +369,7 @@
                         <font key="titleFont" metaFont="system"/>
                     </box>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="557">
-                        <rect key="frame" x="117" y="349" width="81" height="26"/>
+                        <rect key="frame" x="117" y="375" width="81" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="Left" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" inset="2" selectedItem="560" id="558">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -378,7 +386,7 @@
                         </popUpButtonCell>
                     </popUpButton>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="563">
-                        <rect key="frame" x="17" y="355" width="98" height="17"/>
+                        <rect key="frame" x="17" y="381" width="98" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Click using the" id="564">
                             <font key="font" metaFont="system"/>
@@ -387,7 +395,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="565">
-                        <rect key="frame" x="200" y="355" width="93" height="17"/>
+                        <rect key="frame" x="200" y="381" width="93" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="mouse button" id="566">
                             <font key="font" metaFont="system"/>
@@ -396,7 +404,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="569">
-                        <rect key="frame" x="17" y="323" width="35" height="17"/>
+                        <rect key="frame" x="17" y="349" width="35" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Click" id="570">
                             <font key="font" metaFont="system"/>
@@ -405,7 +413,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="576" customClass="MBNumberField">
-                        <rect key="frame" x="57" y="320" width="45" height="22"/>
+                        <rect key="frame" x="57" y="346" width="45" height="22"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" alignment="right" title="20" drawsBackground="YES" id="577">
                             <font key="font" metaFont="system"/>
@@ -428,7 +436,7 @@
                         </connections>
                     </button>
                     <button verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="660">
-                        <rect key="frame" x="237" y="372" width="82" height="31"/>
+                        <rect key="frame" x="237" y="398" width="82" height="31"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <buttonCell key="cell" type="push" title="Basic" bezelStyle="rounded" alignment="center" controlSize="small" borderStyle="border" imageScaling="proportionallyDown" inset="2" id="661">
                             <behavior key="behavior" pushIn="YES" lightByBackground="YES" lightByGray="YES"/>
@@ -457,7 +465,7 @@
                         </textFieldCell>
                     </textField>
                     <textField verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="578">
-                        <rect key="frame" x="122" y="323" width="64" height="17"/>
+                        <rect key="frame" x="122" y="349" width="64" height="17"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="times per" id="579">
                             <font key="font" metaFont="system"/>
@@ -466,7 +474,7 @@
                         </textFieldCell>
                     </textField>
                     <stepper horizontalHuggingPriority="750" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="580">
-                        <rect key="frame" x="101" y="316" width="19" height="29"/>
+                        <rect key="frame" x="101" y="342" width="19" height="29"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <stepperCell key="cell" continuous="YES" alignment="left" minValue="1" maxValue="900" doubleValue="50" id="581"/>
                         <connections>
@@ -474,7 +482,7 @@
                         </connections>
                     </stepper>
                     <popUpButton verticalHuggingPriority="750" fixedFrame="YES" imageHugsTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="595">
-                        <rect key="frame" x="188" y="317" width="83" height="26"/>
+                        <rect key="frame" x="188" y="343" width="83" height="26"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
                         <popUpButtonCell key="cell" type="push" title="second" bezelStyle="rounded" alignment="left" lineBreakMode="truncatingTail" state="on" borderStyle="border" imageScaling="proportionallyDown" inset="2" selectedItem="598" id="596">
                             <behavior key="behavior" lightByBackground="YES" lightByGray="YES"/>
@@ -500,6 +508,7 @@
                 <outlet property="ifStationaryForCheckbox" destination="650" id="672"/>
                 <outlet property="ifStationaryForSelector" destination="642" id="673"/>
                 <outlet property="ifStationaryForText" destination="698" id="700"/>
+                <outlet property="jitterCheckbox" destination="jit-Cb-x01" id="jit-Ou-x03"/>
                 <outlet property="modeButton" destination="660" id="662"/>
                 <outlet property="rateSelector" destination="576" id="674"/>
                 <outlet property="rateUnitSelector" destination="595" id="675"/>

@@ -51,6 +51,8 @@
     IBOutlet MBNumberField* ifStationaryForSelector;
     IBOutlet NSTextField* ifStationaryForText;
     
+    IBOutlet NSButton* jitterCheckbox;
+    
     IBOutlet SRRecorderControl* shortcutRecorder;
     
     NSArray* iconArray;

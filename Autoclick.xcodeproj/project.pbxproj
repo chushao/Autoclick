@@ -397,7 +397,7 @@
 /* Begin XCRemoteSwiftPackageReference section */
 		B2BBD04725BD749100EEA9DF /* XCRemoteSwiftPackageReference "ShortcutRecorder" */ = {
 			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "git://github.com/Kentzo/ShortcutRecorder.git";
+			repositoryURL = "https://github.com/Kentzo/ShortcutRecorder.git";
 			requirement = {
 				kind = upToNextMajorVersion;
 				minimumVersion = 3.3.0;

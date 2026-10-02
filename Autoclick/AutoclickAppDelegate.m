@@ -39,6 +39,8 @@
     [state encodeBool:[ifStationaryCheckbox state] forKey:@"ifStationaryCheckbox"];
     [state encodeBool:[ifStationaryForCheckbox state] forKey:@"ifStationaryForCheckbox"];
     [state encodeInteger:[ifStationaryForSelector integerValue] forKey:@"ifStationaryForSelector"];
+    
+    [state encodeBool:[jitterCheckbox state] forKey:@"jitterCheckbox"];
 }
 
 - (void)decodeRestorableState:(NSCoder *)state {
@@ -57,6 +59,8 @@
     [ifStationaryCheckbox setState:[state decodeBoolForKey:@"ifStationaryCheckbox"]];
     [ifStationaryForCheckbox setState:[state decodeBoolForKey:@"ifStationaryForCheckbox"]];
     [ifStationaryForSelector setIntegerValue:[state decodeIntegerForKey:@"ifStationaryForSelector"]];
+    
+    [jitterCheckbox setState:[state decodeBoolForKey:@"jitterCheckbox"]];
     
     [rateSelector syncWithStepper];
     [startAfterSelector syncWithStepper];
@@ -163,7 +167,7 @@
         if (frame.size.height >= 400)
         {
             frame.size.height = 217;
-            frame.origin.y += 415 - 217;
+            frame.origin.y += 441 - 217;
 
             [window setFrame:frame display:YES animate:YES];
         }
@@ -179,8 +183,8 @@
         NSRect frame = [window frame];
         if (frame.size.height <= 300)
         {
-            frame.size.height = 415;
-            frame.origin.y -= 415 - 217;
+            frame.size.height = 441;
+            frame.origin.y -= 441 - 217;
 
             [window setFrame:frame display:YES animate:YES];    
         }
@@ -231,14 +235,14 @@
         }
         
         // Rate
-        NSInteger selectedRate = [rateSelector intValue];
-        NSInteger selectedRateUnit = ([rateUnitSelector indexOfSelectedItem]==0)?1000:60000;
+        NSInteger selectedRate = MAX([rateSelector integerValue], 1);
+        double selectedRateUnit = ([rateUnitSelector indexOfSelectedItem]==0)?1000:60000;
 
         double rate = selectedRateUnit / selectedRate; // a click every 'rate' (in ms)
         
         // Start Clicking or add the advanced preferences ?
         if (!mode)
-            [clicker startClicking:selectedButton rate:rate startAfter:0 stopAfter:0 ifStationaryFor:0];
+            [clicker startClicking:selectedButton rate:rate jitter:0 startAfter:0 stopAfter:0 ifStationaryFor:0];
         else
         {
             NSInteger startAfter = ([startAfterCheckbox state])?([startAfterSelector intValue]*(([startAfterUnitSelector indexOfSelectedItem]==0)?1:60)):0;
@@ -247,7 +251,9 @@
                         
             NSInteger stationaryFor = ([ifStationaryCheckbox state])?([ifStationaryForCheckbox state]?[ifStationaryForSelector intValue]:1):0;
             
-            [clicker startClicking:selectedButton rate:rate startAfter:startAfter stopAfter:stopAfter ifStationaryFor:stationaryFor];
+            double jitter = ([jitterCheckbox state])?0.2:0; // ±20% of the click interval
+            
+            [clicker startClicking:selectedButton rate:rate jitter:jitter startAfter:startAfter stopAfter:stopAfter ifStationaryFor:stationaryFor];
         }
         
         [self startedClicking];
